@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Word Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .container { max-width: 600px; margin: auto; }
+        button { padding: 10px 20px; margin-top: 20px; }
+        input { margin: 10px 0; padding: 5px; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>English Word Quiz</h1>
+        <p>Select a category:</p>
+        <select id="category">
+            <option value="animals">Animals</option>
+            <option value="colors">Colors</option>
+            <option value="household">Household Items</option>
+        </select>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <div id="quiz" style="display:none;">
+            <div id="questions"></div>
+            <button onclick="submitQuiz()">Submit</button>
+        </div>
+        <div id="results" style="display:none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
